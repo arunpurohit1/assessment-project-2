@@ -73,6 +73,11 @@ body{
     flex: 1;
     border-radius: 25px;
     border: 0;
+    text-align: center;
+     text-decoration: solid;
+     text-transform: uppercase;
+     font-family: 'Times New Roman', Times, serif;
+     font-style: cursive;
 }
 
 .navarea button{
@@ -85,7 +90,7 @@ body{
     margin-left: 3px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (max-width: 350px) and (max-width: 991px) {
     .wrapper{
         width: 100%;
     }
@@ -94,8 +99,50 @@ body{
     }
     .navarea ul{
         flex-direction: row;
-    }     
+    }    
+
+    .features h2{
+
+        text-align: center;
+    }
  
+}
+
+
+@media(min-width: 401px) and (max-width: 1024px){
+
+    .wrapper{
+        width: 100%;
+    }
+    .navarea{
+        flex-direction: column;
+    }
+    .navarea ul{
+        flex-direction: row;
+    }    
+
+    .features h2{
+
+        text-align: center;
+    }
+
+    
+}
+
+
+
+@media(min-width: 200px) and (max-width: 400px){
+
+
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+   .features img{
+
+        width: 80px;
+   } 
 }
 
 @media only screen and (max-width: 767px){
@@ -114,7 +161,8 @@ body{
 
     .navarea li{
         padding: 0;
-        font-size: 11px;
+        font-size: 8px;
+        text-align: center;
     }
 }
 

@@ -9,18 +9,34 @@
 </head>
 <body>
 
-     <form action="/html/DB2.html" class="DB" >
+  <div id="sidebar" onclick="togglemenu()">
+       <div class="toggle-btn">
+           <span></span>
+           <span></span>
+           <span></span>
+       </div>
+       <ul id="lst">
+        <li id="home"><a href="../index.html">Home</a></li>
+        <li><a href="html/DB.html">Direct Booking</a></li>
+        <li><a href="html/Tophotel.html">Hotels</a></li>
+        <li><a href="html/team.html">Team</a></li>
+        <li><a href="html/contact.html">Contact</a></li>
+        <li><a href="html/Rate.html">Rate</a></li>
+    </ul>   
+  </div>
+
+  <div class="DirectB">
+     <form action="DB2.html" class="DB" id="contactform" > 
          <label for="first">First Name:</label><br>
-         <input type="name" name="First" placeholder="First Name" required >
+         <input type="name" name="First" placeholder="First Name" id="inputfirst" required >
          <p></p>
          <p></p>
          <label for="Last">Last Name:</label><br>
-         <input type="name" name="Last" placeholder="Last Name" required>
+         <input type="name" name="Last" placeholder="Last Name" id="inputlast" required>
          <p></p>
          <p></p>
          <label for="mail">Email:</label><br>
-         <input type="email" id="h" name="mail" placeholder="xyz@xyz.com" required>
-         <p></p>
+         <input type="email" id="h" name="mail" placeholder="xyz@xyz.com" id="inputmail" required>
          <p></p>
          <label for="phone">Phone number:</label><br>
          <input type="tel" id="phone" name="phone" placeholder="123456789" pattern="[0-9]{10}" required>
@@ -58,9 +74,14 @@
          <p></p>
          <p></p>
          <label for="ANR">Any Other Requirement:</label><br>
-         <textarea name="ANR" cols="10" rows="4" class="ta"></textarea> <br>
+         <textarea name="ANR" cols="10" rows="2" class="ta"></textarea> <br>
          <label for="btn"></label>
-         <input type="submit" value="Submit" name="btn" id="B">
+         <input type="submit" value="Submit" name="btn" id="B" class="submited">
      </form>
+
+  </div>   
 </body>
+
+ <script src="../js/form.js"></script>
+ <script src="../js/sidebar.js" ></script>
 </html>
