@@ -10,7 +10,7 @@ function getdata(){
 
   xhr.open('GET',url,true)
 
-  xhr.setRequestHeader('x-rapidapi-key' , 'd2ccf3eb5cmshca4ee487778244bp134ed0jsn7e322ac693fb');
+  xhr.setRequestHeader('x-rapidapi-key' , '2dab7a2a62msh0ec62f0923694abp102b86jsnf503d443787e');
 
   xhr.onload = function() {
    
